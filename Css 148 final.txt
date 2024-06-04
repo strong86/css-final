@@ -1,35 +1,130 @@
-body, h1, p, ul, li {
-    margin: 0;
-    padding: 0;
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
 }
-
 header {
-    background-color: blu;
-    color: white;
-    text-align: center;
+	background-color
+     linear-gradient (to right for left, blue, white)
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 800px;
+    margin: 0 auto;
+    border: 3px solid #931420;
+    background-color: blue;
 }
 
-nav ul {
-    list-style-type: none;
+/* Set section width and float right */
+section {
+    width: 525px;
+    float: right;
+    padding: 20px 20px 20px 20px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+/* Set aside width and float right */
+aside {
+    width: 215px;
+    float: right;
+    padding: 0 20px 20px 20px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
+/* Set padding for aside */
+aside {
+    padding-left: 20px;
+    padding-bottom: 20px;
 }
 
-main {
-    padding: 20px;
+/* Set padding for section */
+section {
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
+
+a:focus, a:hover {
+	font-style: italic;
+}
+
+/* the styles for the header */
+}
+header h2 {
+	font-size: 170%;
+	color: #800000;
+}
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+}
+#nav_menu ul{
+	list-style-type:none;
+	position:relative;
+	margin:0;
+	padding:0;
+}
+#nav_menu ul li{
+	float:left;
+}
+#nav_menu ul ul{
+	display:none;
+	position:absolute;
+	top:100%;
+}
+#nav_menu ul li a{
+	display:block;
+	width:128px;
+	text-align: center;
+	padding: 1em 1em;
+	text-decoration:none;
+	background-color: #800000;
+	color:white;
+	font-weight:bold;
+}
+#nav_menu ul li a.current{
+	color: yellow;
+}
+#nav_menu ul li:hover>ul{
+	display:block;
+}
+#nav_menu ul{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+}
+main section{
+	width:525px;
+	float:right;
+	padding-right:20px;
+	padding-left: 20px;
+	padding-bottom:20px;
+}
+aside{
+   width:215px;
+   float:right;
+   padding-left:20px;
+   padding-bottom:20px;
+}
+
+/* the styles for the article */
+article {
+	padding: .5em 0;
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+}
+article h2 {
+	padding-top: 0;
+}
+
+/* the styles for the footer */
 footer {
-    background-color: blu;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+	
+    background-color: 
+     linear-gradient (to right for left, blue, white)
 }
+footer p {
+	text-align: center;
+	color: white;
+	padding: 1em 1em;
 
